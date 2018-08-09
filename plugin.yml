@@ -1,0 +1,17 @@
+name: ZombieSurviaval
+main: quakeCraft\MGARace
+version: 1.0.0
+api: [3.0.0]
+author: djdisodo
+description: an example race plugin of MiniGameAPI
+depends: MiniGameAPI
+website: https://github.com/MiniGameAPI-PM
+commands:
+  레이스:
+    description: "minigame ui"
+    permission: quakeCraft.command
+    usage: /mg
+permissions:
+ mgarace.command:
+  description: "control all functions of quakeCraft"
+  default: op
