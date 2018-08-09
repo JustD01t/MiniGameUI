@@ -1,2 +1,1 @@
-# MiniGameUI
-join your minigames using ui
+# JUST D01NG
