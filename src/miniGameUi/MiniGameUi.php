@@ -13,7 +13,7 @@ use pocketmine\utils\TextFormat;
 
 final class MiniGameUi extends PluginBase {
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
-        $form = FormAPI::getInstance()->createSimpleForm(function (Player $player, int $data = null) : void{
+        $form = FormAPI::getInstance()->createSimpleForm(function (Player $player, $data = null) : void{
             if($data === null){
                 return;
             }
