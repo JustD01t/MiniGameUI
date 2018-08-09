@@ -39,5 +39,7 @@ final class MiniGameUi extends PluginBase {
             $form->addButton($text,SimpleForm::IMAGE_TYPE_PATH,$game->getIconImage(), $game->getName());
         }
         $form->addButton('close',-1,'', 'quit');
+        $form->sendToPlayer($sender);
+        return true;
     }
 }
