@@ -34,7 +34,7 @@ final class MiniGameUi extends PluginBase {
             }
             $text .= $game->getName() . TextFormat::GRAY . TextFormat::EOL;
             if ($game->isRunning() or $game->isWaiting()) {
-                $text .= MiniGameApi::getInstance()->getLanguage()->translateString('left.time',[(int)($game->isRunning() ? $game->getRemainingWaitTime()->asSec() : $game->getRemainingRunTime()->asSec())]);
+                $text .= MiniGameApi::getInstance()->getLanguage()->translateString('left.time',[(int)($game->isRunning() ? $game->getRemainingRunTime()->asSec() : $game->getRemainingWaitTime()->asSec())]);
             } else {
                 $text .= MiniGameApi::getInstance()->getLanguage()->translateString('left.players', [$game->getNeededPlayers(), count($game->getPlayers()), $game->getMaxPlayers()]);
             }
